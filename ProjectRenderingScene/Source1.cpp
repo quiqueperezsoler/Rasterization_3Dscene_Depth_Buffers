@@ -403,6 +403,7 @@ void DrawPolygonRows(const vector<Pixel>& leftPixels, const vector<Pixel>& right
 void DrawPolygon(const vector<Vertex>& vertices)
 {
 	int V = vertices.size();
+
 	vector<Pixel> vertexPixels(V);
 	for (int i = 0; i<V; ++i) {
 		VertexShader(vertices[i], vertexPixels[i]);
