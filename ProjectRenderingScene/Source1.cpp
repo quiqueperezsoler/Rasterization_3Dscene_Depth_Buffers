@@ -412,7 +412,7 @@ void DrawPolygon(const vector<Vertex>& vertices)
 	ComputePolygonRows(vertexPixels, leftPixels, rightPixels);
 	DrawPolygonRows(leftPixels, rightPixels);
 }
-//Determines the final color of the image at that position
+//Determines the final color of the image at that position.
 void PixelShader(const Pixel& p) {
 	int x = p.x;
 	int y = p.y;
